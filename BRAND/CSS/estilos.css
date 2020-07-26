@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* -------------Variables */
+:root{
+--green-color:#7acc2d;
+--white-color: white;
+--black-color: black;
+/*Espaciado*/
+--space:10px;
+/*Fuente*/
+--normal: 12px;
+/*Box shadow*/
+--box:0px 0 2px 1px #e6e5e9;
+}
+
+/* -------------Principal - NAV */
+html, body{
+    padding : 0px; 
+    margin : 0px;
+    font-size: var(--normal);
+    font-family:  Helvetica;
+}
+
+nav{
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color : var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+} 
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+}
+/* ---------------------------Main section*/
+.main_section{
+    padding: 15%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+/* ---------------------------Products section*/
+.products{
+    background-image: url("../images/curve.jpg");
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 25%;
+    display: flex;
+    padding-top: 10% ;
+    
+}
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+.product .content{
+    background-color: var(--white-color);
+    padding: 15%;
+    box-shadow: var(--box);
+} 
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.main_button:hover{
+    background-color: #5e9e22;
+}
+/*---------------------------Img contenedor*/
+.img_content{
+    text-align: center;
+    max-width: 200px;
+}
+/*---------------------------Beneficios section*/
+.beneficios{
+    /*background-color: darkgrey;*/
+    max-height: 10px;
+    padding: 25%;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+}
+.beneficios .content1{
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+    margin-left: 5%;
+}
+/*---------------------Venta*/
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.data{
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+/*---------------------Grilla*/
+.option{
+    padding: var(--space);
+    color : var(--white-color);
+    font-weight: bold;
+}
+/*--------------------------Footer section*/
+.footer{
+    display: flex;   
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+/*----------------------Texto*/
+p, label{
+    font-size: var(--normal);
+}
+
